@@ -63,6 +63,7 @@
     <Compile Include="Assets/Scripts/loginAdnRegister/Register.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/Test.cs" />
     <Compile Include="Assets/Scripts/Response.cs" />
+    <Compile Include="Assets/Scripts/Init.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

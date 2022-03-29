@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{B0DDE0A8-697C-9680-5413-EF473C3E5642}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/loginAdnRegister/UsernameValue.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="Assets/Scripts/Response.cs" Line="8" Column="12" />
       <File FileName="Assets/Scripts/loginAdnRegister/Register.cs" Line="14" Column="41" />
       <File FileName="Assets/Scripts/loginAdnRegister/UsernameValue.cs" Line="40" Column="1" />
+      <File FileName="Assets/Scripts/Init.cs" Line="22" Column="18" />
+      <File FileName="Assets/Scripts/loginAdnRegister/ToRegister.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,9 +13,8 @@
           <Node name="air" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="loginAdnRegister" expanded="True">
-                  <Node name="UsernameValue.cs" selected="True" />
-                </Node>
+                <Node name="loginAdnRegister" expanded="True" />
+                <Node name="Init.cs" selected="True" />
               </Node>
             </Node>
           </Node>
