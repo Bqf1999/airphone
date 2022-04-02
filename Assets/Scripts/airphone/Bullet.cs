@@ -6,18 +6,19 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float bullet_speed = 0.001f;
+    public float bullet_speed = 10f;
 
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(this.gameObject, 2f);
+        Destroy(this.gameObject, 5f);
         
     }
 
-    // Update is called once per frame
-    //void Update()
-    //{
-    //    transform.position += new Vector3(0, bullet_speed, 0);
-    //}
+    //Update is called once per frame
+    void Update()
+    {
+        this.transform.Translate(Vector3.up * bullet_speed*Time.deltaTime);
+
+    }    
 }

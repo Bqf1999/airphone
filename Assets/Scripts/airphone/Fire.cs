@@ -6,16 +6,16 @@ using UnityEngine;
 //飞机发射子弹，挂载到枪口上。
 public class Fire : MonoBehaviour
 {
-    public Rigidbody2D bull1;             //子弹类型
-    public Rigidbody2D bull2;
+    public GameObject bull1;             //子弹类型
+    public GameObject bull2;
     public GameObject left;               //左侧枪口
     public GameObject right;              //右侧枪口
 
-    public float Bull_speed;              //子弹的运动速度
+    
 
     public int score;                     //分数升级枪口
 
-    public float fireSeparation = 0.5f;   //产生子弹的速度
+    public float BullProduceTime = 0.01f;   //产生子弹的速度
 
     private void Start()
     {
@@ -27,19 +27,20 @@ public class Fire : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(fireSeparation);
+            yield return new WaitForSeconds(BullProduceTime);
             if (score > 100)
             {
-                var newBulletle = Instantiate(bull2, left.transform);
-                newBulletle.velocity = new Vector2(left.transform.position.x, Bull_speed);
-
-                var newBulletri = Instantiate(bull2, right.transform);
-                newBulletri.velocity = new Vector2(right.transform.position.x, Bull_speed);
-
+                var newBulletle = Instantiate(bull2);
+                //newBulletle.velocity = new Vector2(left.transform.position.x, Bull_speed);
+                newBulletle.transform.position = left.transform.position;
+                var newBulletri = Instantiate(bull2);
+                //newBulletri.velocity = new Vector2(right.transform.position.x, Bull_speed);
+                newBulletri.transform.position = right.transform.position;
             }
             else {
-                var newBullet = Instantiate(bull1, this.transform);
-                newBullet.velocity = new Vector2(this.transform.position.x,Bull_speed);
+                var newBullet = Instantiate(bull1);
+                //newBullet.velocity = new Vector2(0,Bull_speed);
+                newBullet.transform.position = this.transform.position;
             }
             
         }
