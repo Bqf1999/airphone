@@ -56,14 +56,22 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/loginAdnRegister/UsernameValue.cs" />
-    <Compile Include="Assets/Scripts/loginAdnRegister/PasswordValue.cs" />
-    <Compile Include="Assets/Scripts/loginAdnRegister/ToRegister.cs" />
-    <Compile Include="Assets/Scripts/loginAdnRegister/PasswordAgain.cs" />
+    <Compile Include="Assets/Scripts/enemy/BornEnemy.cs" />
+    <Compile Include="Assets/Scripts/airphone/Fire.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/Register.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/Test.cs" />
-    <Compile Include="Assets/Scripts/Response.cs" />
     <Compile Include="Assets/Scripts/Init.cs" />
+    <Compile Include="Assets/Scripts/loginAdnRegister/ButtonLogin.cs" />
+    <Compile Include="Assets/Scripts/loginAdnRegister/UsernameValue.cs" />
+    <Compile Include="Assets/Scripts/UserSerial.cs" />
+    <Compile Include="Assets/Scripts/Response.cs" />
+    <Compile Include="Assets/Scripts/airphone/Bullet.cs" />
+    <Compile Include="Assets/Scripts/airphone/move.cs" />
+    <Compile Include="Assets/Scripts/loginAdnRegister/PasswordValue.cs" />
+    <Compile Include="Assets/Scripts/enemy/enemyMove.cs" />
+    <Compile Include="Assets/Scripts/JsonSerial.cs" />
+    <Compile Include="Assets/Scripts/loginAdnRegister/PasswordAgain.cs" />
+    <Compile Include="Assets/Scripts/loginAdnRegister/ToRegister.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -82,6 +90,7 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets/usr.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
     <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />

@@ -6,5 +6,5 @@ public class Response
 {
 
     public  string success;
-    //public User user;
+    public UserSerial user;
 }

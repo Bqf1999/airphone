@@ -5,6 +5,8 @@ using System;
 using System.IO;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
+
 public class Init : MonoBehaviour
 {
     //挂载到登陆游戏按钮上
@@ -14,38 +16,47 @@ public class Init : MonoBehaviour
 
     public Button login;
 
+    public Canvas canvasInit;
+
+    public Canvas canvasSuccess;
+
     private string mainPath = System.IO.Directory.GetCurrentDirectory();
-    private string filePath = "/Assets/usr.txt";
+    private string filePath = "/Assets/usr.json";
+
+
     // Start is called before the first frame update
     void Start()
     {
         login.onClick.AddListener(logClick);
-
     }
 
     public void logClick() {
 
-        if (!File.Exists(mainPath + filePath))
+        Debug.Log("dianjidian");
+
+        if (!File.Exists(mainPath + filePath))    //用户未登陆过,跳到用户登陆界面。
         {
-            File.CreateText(mainPath + filePath);
+            canvasInit.enabled = false;
+            SceneManager.LoadScene("Login");
         }
         else
         {
-            StreamReader sr = File.OpenText(mainPath + filePath);
-            string s = sr.ReadLine();
-            if (s.Length != 0)
+            
+            JsonSerial<UserSerial> jsonSerial = new JsonSerial<UserSerial>();
+            jsonSerial.filePath = mainPath+filePath;
+            UserSerial user = jsonSerial.readJson();
+
+            if (user != null)
             {
-                string[] args = s.Split(' ');
-                if (true)
-                {
-                    //SceneManager.LoadScene();//跳到canvs1
-                }
-            }
-            else
-            {
+                Debug.Log("文件为空");
+                canvasInit.enabled = false;
                 SceneManager.LoadScene("Login");
             }
-
+            else {
+                Debug.Log("查到");
+                canvasInit.enabled = false;
+                canvasSuccess.enabled = true;
+            }
         }
     }
 
