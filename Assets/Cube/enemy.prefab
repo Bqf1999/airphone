@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
-  speed: 8
+  speed: 5
 --- !u!50 &5794013706690082454
 Rigidbody2D:
   serializedVersion: 4
@@ -159,3 +159,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b8397ba9d8d9402bb2dd27278d02098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baozha: {fileID: 8409566117814789945, guid: 1e725f3375c31403d9773b1864ab4fa4, type: 3}

@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{B0DDE0A8-697C-9680-5413-EF473C3E5642}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/airphone/Bullet.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/enemy/isHit.cs">
     <Files>
+      <File FileName="Assets/Scripts/enemy/isHit.cs" Line="13" Column="43" />
       <File FileName="Assets/Scripts/enemy/BornEnemy.cs" Line="10" Column="5" />
-      <File FileName="Assets/Scripts/enemy/enemyMove.cs" Line="11" Column="16" />
-      <File FileName="Assets/Scripts/Fire.cs" Line="42" Column="51" />
-      <File FileName="Assets/Scripts/airphone/Bullet.cs" Line="22" Column="8" />
-      <File FileName="Assets/Scripts/enemy/isHit.cs" Line="10" Column="49" />
+      <File FileName="Assets/Scripts/enemy/enemyMove.cs" />
+      <File FileName="Assets/Scripts/airphone/Bullet.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,10 +12,10 @@
           <Node name="air" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="airphone" expanded="True">
-                  <Node name="Bullet.cs" selected="True" />
+                <Node name="airphone" expanded="True" />
+                <Node name="enemy" expanded="True">
+                  <Node name="isHit.cs" selected="True" />
                 </Node>
-                <Node name="enemy" expanded="True" />
                 <Node name="loginAdnRegister" expanded="True" />
               </Node>
             </Node>
@@ -27,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e579455e-9f29-4b00-b337-27e4d0df113f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="95746d11-3cdb-4f5d-8fef-25a44c073154" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
