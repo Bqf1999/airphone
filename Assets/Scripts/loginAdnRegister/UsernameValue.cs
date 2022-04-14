@@ -19,24 +19,24 @@ public class UsernameValue : MonoBehaviour
     public void UsrExist()
     {
 
-        StartCoroutine("Post");
+        //StartCoroutine("Post");
 
     }
 
 
-    [System.Obsolete]
-    IEnumerator Post()
-    {
-        //发送登陆表单
-        WWWForm form = new WWWForm();
-        form.AddField(username, usr.text);
-        UnityWebRequest request = UnityWebRequest.Post(url, form);
-        yield return request.SendWebRequest();
-        if (request.isHttpError || request.isNetworkError)
-        {
-            Debug.Log(request.error);
-        }
-        Response tmp = JsonUtility.FromJson<Response>(request.downloadHandler.text);
-        Debug.Log(tmp.success);
-     }
+    //[System.Obsolete]
+    //IEnumerator Post()
+    //{
+    //    //发送登陆表单
+    //    WWWForm form = new WWWForm();
+    //    form.AddField(username, usr.text);
+    //    UnityWebRequest request = UnityWebRequest.Post(url, form);
+    //    yield return request.SendWebRequest();
+    //    if (request.isHttpError || request.isNetworkError)
+    //    {
+    //        Debug.Log(request.error);
+    //    }
+    //    Response tmp = JsonUtility.FromJson<Response>(request.downloadHandler.text);
+    //    Debug.Log(tmp.success);
+    // }
 }

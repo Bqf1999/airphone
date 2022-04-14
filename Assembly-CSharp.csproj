@@ -56,23 +56,37 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/enemy/BornEnemy.cs" />
-    <Compile Include="Assets/Scripts/airphone/Fire.cs" />
+    <Compile Include="Assets/Scripts/Score.cs" />
+    <Compile Include="Assets/Scripts/enemy/bossMove.cs" />
+    <Compile Include="Assets/Scripts/airphone/airFire.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/Register.cs" />
+    <Compile Include="Assets/Scripts/enemy/boss1Fire.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/Test.cs" />
     <Compile Include="Assets/Scripts/Init.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/ButtonLogin.cs" />
+    <Compile Include="Assets/Scripts/airphone/airLife.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/UsernameValue.cs" />
     <Compile Include="Assets/Scripts/UserSerial.cs" />
+    <Compile Include="Assets/Scripts/enemy/bulletMove.cs" />
+    <Compile Include="Assets/Scripts/enemy/emenyLife.cs" />
+    <Compile Include="Assets/Scripts/enemy/bossTwoFire.cs" />
     <Compile Include="Assets/Scripts/Response.cs" />
-    <Compile Include="Assets/Scripts/airphone/Bullet.cs" />
-    <Compile Include="Assets/Scripts/airphone/move.cs" />
+    <Compile Include="Assets/Scripts/enemy/emenyFire.cs" />
+    <Compile Include="Assets/Scripts/airphone/airBullet.cs" />
+    <Compile Include="Assets/Scripts/airphone/airMove.cs" />
+    <Compile Include="Assets/Scripts/enemy/isHit.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/PasswordValue.cs" />
-    <Compile Include="Assets/Scripts/enemy/enemyMove.cs" />
+    <Compile Include="Assets/Scripts/enemy/BornEmeny.cs" />
     <Compile Include="Assets/Scripts/JsonSerial.cs" />
+    <Compile Include="Assets/Scripts/enemy/bossFire.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/PasswordAgain.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/ToRegister.cs" />
-    <Compile Include="Assets/Scripts/enemy/isHit.cs" />
+    <Compile Include="Assets/Scripts/backMove.cs" />
+    <Compile Include="Assets/Scripts/loginAdnRegister/ResponseStatus.cs" />
+    <Compile Include="Assets/Scripts/tips.cs" />
+    <Compile Include="Assets/Scripts/exit.cs" />
+    <Compile Include="Assets/Scripts/togame.cs" />
+    <Compile Include="Assets/Scripts/UI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

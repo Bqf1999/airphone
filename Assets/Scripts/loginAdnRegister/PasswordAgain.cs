@@ -12,7 +12,7 @@ public class PasswordAgain : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pwdAgain.onValueChanged.AddListener(delegate { isSame(); });
+       
     }
 
     public void isSame() {
@@ -22,7 +22,8 @@ public class PasswordAgain : MonoBehaviour
             pwdAgain.text = "";
             register.enabled = false;
         }
-        else {
+        else
+        {
             register.enabled = true;
         }
     }

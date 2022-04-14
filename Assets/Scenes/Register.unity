@@ -257,8 +257,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7e140b51d2a64913ae5046c9bb2b130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  usr: {fileID: 1265810837}
-  pwd: {fileID: 362260525}
+  regUrl: 
+  accoutID: {fileID: 1265810837}
+  password: {fileID: 362260525}
   register: {fileID: 34015413}
 --- !u!1 &161213449
 GameObject:

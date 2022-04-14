@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{B0DDE0A8-697C-9680-5413-EF473C3E5642}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/enemy/isHit.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Assets/Scripts/enemy/isHit.cs" Line="13" Column="43" />
-      <File FileName="Assets/Scripts/enemy/BornEnemy.cs" Line="10" Column="5" />
-      <File FileName="Assets/Scripts/enemy/enemyMove.cs" />
-      <File FileName="Assets/Scripts/airphone/Bullet.cs" />
+      <File FileName="Assets/Scripts/loginAdnRegister/ButtonLogin.cs" Line="21" Column="6" />
+      <File FileName="Assets/Scripts/togame.cs" Line="13" Column="6" />
+      <File FileName="Assets/Scripts/enemy/BornEmeny.cs" Line="27" Column="60" />
+      <File FileName="Assets/Scripts/airphone/airLife.cs" Line="13" Column="4" />
+      <File FileName="Assets/Scripts/enemy/isHit.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UI.cs" Line="40" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,10 +15,12 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="airphone" expanded="True" />
-                <Node name="enemy" expanded="True">
-                  <Node name="isHit.cs" selected="True" />
-                </Node>
+                <Node name="enemy" expanded="True" />
                 <Node name="loginAdnRegister" expanded="True" />
+                <Node name="UI.cs" selected="True" />
+              </Node>
+              <Node name="TextMesh Pro" expanded="True">
+                <Node name="Shaders" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -26,7 +30,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="95746d11-3cdb-4f5d-8fef-25a44c073154" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="eb13caf5-b06c-4153-86ca-055982cda291" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
