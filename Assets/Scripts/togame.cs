@@ -9,11 +9,12 @@ public class togame : MonoBehaviour
     public GameObject game;
     private void Start()
     {
-        game.active = false;
+        
+        game.SetActive(false);
     }
     public void OnClick()
     {
-        canvas.active = false;
-        game.active = true;
+        canvas.SetActive(false);
+        game.SetActive(true);
     }
 }

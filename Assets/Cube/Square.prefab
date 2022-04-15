@@ -139,11 +139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34cf370f5e5264f5a99d920e789e748b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  slider: {fileID: 0}
-  lifeValue: {fileID: 0}
-  stage: {fileID: 0}
-  canvas: {fileID: 0}
   baozha: {fileID: 8409566117814789945, guid: 1e725f3375c31403d9773b1864ab4fa4, type: 3}
 --- !u!61 &6621693747517946963
 BoxCollider2D:
@@ -314,4 +309,4 @@ MonoBehaviour:
   bull2: {fileID: 6616684563492479800, guid: e9d857185db79402aac5a856d3a3bf8f, type: 3}
   left: {fileID: 6621693747759930347}
   right: {fileID: 6621693747559928641}
-  BullProduceTime: 0.2
+  BullProduceTime: 0.5

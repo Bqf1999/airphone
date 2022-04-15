@@ -7,21 +7,23 @@ using System.IO;
 [Serializable]
 public class UserSerial
 {
-    public string account;
+    public string accountId;
     public string password;
 
+
+    public UserSerial() { }
     public UserSerial(string id,string pwd) {
-        this.account = id;
+        this.accountId = id;
         this.password = pwd;
     }
     public void  setAccountId(string id) {
-        this.account = id;
+        this.accountId = id;
     }
     public void setPassword(string pwd) {
         this.password = pwd;
     }
     public string getAccountId() {
-        return account;
+        return accountId;
     }
     public string getPassword() {
         return password;

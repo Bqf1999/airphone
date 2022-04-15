@@ -17,14 +17,28 @@ public class isHit : MonoBehaviour
             switch (name)
             { 
                 case "enemy0(Clone)":
+                    airLife.score += 3;
+                    UI.array.Add(0);
+                    break;
                 case "enemy1(Clone)":
-                    airLife.score += 5;
+                    airLife.score += 3;
+                    UI.array.Add(1);
                     break;
                 case "emeny3(Clone)":
+                    airLife.score += 5;
+                    UI.array.Add(2);
+                    break;
                 case "emeny2(Clone)":
+                    airLife.score += 5;
+                    UI.array.Add(3);
+                    break;
                 case "emeny7(Clone)":
+                    airLife.score += 8;
+                    UI.array.Add(4);
+                    break;
                 case "emeny8(Clone)":
                     airLife.score += 8;
+                    UI.array.Add(5);
                     break;
                 case "boss0(Clone)":
                     this.gameObject.GetComponent<emenyLife>().bossLife -= 1;
@@ -33,7 +47,7 @@ public class isHit : MonoBehaviour
                         isExist = false;
                         Destroy(collision.gameObject);
                     }
-                    
+                    UI.array.Add(6);
                     break;
                 case "boss1(Clone)":
                     this.gameObject.GetComponent<emenyLife>().bossLife -= 1;
@@ -42,7 +56,7 @@ public class isHit : MonoBehaviour
                         isExist = false;
                         Destroy(collision.gameObject);
                     }
-                   
+                    UI.array.Add(7);
                     break;
                 case "boss2(Clone)":
                     this.gameObject.GetComponent<emenyLife>().bossLife -= 1;
@@ -51,7 +65,7 @@ public class isHit : MonoBehaviour
                         isExist = false;
                         Destroy(collision.gameObject);
                     }
-                    
+                    UI.array.Add(8);
                     break;
                 default:
                     break;

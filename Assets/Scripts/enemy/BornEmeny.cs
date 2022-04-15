@@ -15,25 +15,34 @@ public class BornEmeny : MonoBehaviour
     public float airControlSpeed=1; //1---0.5--0.3
 
     public float bulControlSpeed=1f;
+
+
     public int[] born = new int[]   { 0,0,1,0,1,2,1,3,0,3,1,2,3,1,4}; //生产列表
     public float[] time = new float[] { 3, 2, 3, 2, 3, 2, 3, 2, 2, 2, 2, 1, 1, 3, 10 };
 
-    public int scene = 0;
 
-    private void OnEnable()
+    
+
+    private void OnEnable()   //初始化
     {
-        StartCoroutine(FireAfterXSeconds());
+        StartCoroutine("Emeny");
         var newBullet = Instantiate(air);
         newBullet.transform.position = new Vector3(0, 0, -1);
-        Reset();
-    }
-    public void Reset()
-    {
         airLife.life = 100;
         airLife.score = 0;
     }
 
-    IEnumerator FireAfterXSeconds()
+    public void Update()
+    {
+        if (airLife.life <= 0 && airLife.birth == 0)   //游戏结束，停止协程
+        {
+            StopCoroutine("Emeny");
+        }
+    }
+
+   
+
+    IEnumerator Emeny()
     {
         int x = 0;
 

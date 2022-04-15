@@ -29,7 +29,7 @@ public class airFire : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(BullProduceTime);
-            if (airLife.score > 100)
+            if (airLife.score > 60)
             {
                 var newBulletle = Instantiate(bull2);
                 //newBulletle.velocity = new Vector2(left.transform.position.x, Bull_speed);

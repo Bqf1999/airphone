@@ -16,9 +16,11 @@ public class Init : MonoBehaviour
 
     public Button login;
 
-    public Canvas canvasInit;
+    public GameObject canvasthis;
 
-    public Canvas canvasSuccess;
+    public GameObject canvasMain;  //本地保存密码，跳此页面
+
+    public GameObject canvasLogin; //无密码，登陆或注册
 
     private string mainPath = System.IO.Directory.GetCurrentDirectory();
     private string filePath = "/Assets/usr.json";
@@ -32,12 +34,15 @@ public class Init : MonoBehaviour
 
     public void logClick() {
 
-        Debug.Log("dianjidian");
-
+        
         if (!File.Exists(mainPath + filePath))    //用户未登陆过,跳到用户登陆界面。
         {
-            canvasInit.enabled = false;
-            SceneManager.LoadScene("Login");
+            print("文件不存在");
+
+            canvasthis.SetActive(false);
+            canvasLogin.SetActive(true);
+            
+            
         }
         else
         {
@@ -45,17 +50,16 @@ public class Init : MonoBehaviour
             JsonSerial<UserSerial> jsonSerial = new JsonSerial<UserSerial>();
             jsonSerial.filePath = mainPath+filePath;
             UserSerial user = jsonSerial.readJson();
-
-            if (user != null)
+            print(user);
+            if (user == null)
             {
                 Debug.Log("文件为空");
-                canvasInit.enabled = false;
-                SceneManager.LoadScene("Login");
+
+                
             }
             else {
                 Debug.Log("查到");
-                canvasInit.enabled = false;
-                canvasSuccess.enabled = true;
+               
             }
         }
     }

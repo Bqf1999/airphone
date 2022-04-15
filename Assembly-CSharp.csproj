@@ -56,7 +56,9 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/loginAdnRegister/ResponseStatus.cs" />
     <Compile Include="Assets/Scripts/Score.cs" />
+    <Compile Include="Assets/Scripts/TwoPage.cs" />
     <Compile Include="Assets/Scripts/enemy/bossMove.cs" />
     <Compile Include="Assets/Scripts/airphone/airFire.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/Register.cs" />
@@ -64,10 +66,14 @@
     <Compile Include="Assets/Scripts/loginAdnRegister/Test.cs" />
     <Compile Include="Assets/Scripts/Init.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/ButtonLogin.cs" />
+    <Compile Include="Assets/Scripts/UI.cs" />
+    <Compile Include="Assets/Scripts/togame.cs" />
     <Compile Include="Assets/Scripts/airphone/airLife.cs" />
+    <Compile Include="Assets/Scripts/tips.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/UsernameValue.cs" />
     <Compile Include="Assets/Scripts/UserSerial.cs" />
     <Compile Include="Assets/Scripts/enemy/bulletMove.cs" />
+    <Compile Include="Assets/Scripts/exit.cs" />
     <Compile Include="Assets/Scripts/enemy/emenyLife.cs" />
     <Compile Include="Assets/Scripts/enemy/bossTwoFire.cs" />
     <Compile Include="Assets/Scripts/Response.cs" />
@@ -82,11 +88,7 @@
     <Compile Include="Assets/Scripts/loginAdnRegister/PasswordAgain.cs" />
     <Compile Include="Assets/Scripts/loginAdnRegister/ToRegister.cs" />
     <Compile Include="Assets/Scripts/backMove.cs" />
-    <Compile Include="Assets/Scripts/loginAdnRegister/ResponseStatus.cs" />
-    <Compile Include="Assets/Scripts/tips.cs" />
-    <Compile Include="Assets/Scripts/exit.cs" />
-    <Compile Include="Assets/Scripts/togame.cs" />
-    <Compile Include="Assets/Scripts/UI.cs" />
+    <Compile Include="Assets/Editer/autosave.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -105,7 +107,6 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets/usr.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
     <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
